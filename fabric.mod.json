@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alsu-tier-tagger",
+  "version": "${version}",
+  "name": "ALSU Tier Tagger",
+  "description": "A universal Minecraft PvP tier mod displaying player tiers, profiles, HUD and account labels.",
+  "authors": [
+    "Alsu"
+  ],
+  "contact": {
+    "sources": "https://github.com/Alsutiers/ALSU-Tier-Tagger"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/alsu-tier-tagger/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.alsu.tiertagger.ALSUTierTagger"
+    ],
+    "client": [
+      "com.alsu.tiertagger.client.ALSUTierTaggerClient"
+    ]
+  },
+  "mixins": [
+    "alsu-tier-tagger.mixins.json",
+    {
+      "config": "alsu-tier-tagger.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
