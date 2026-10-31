@@ -1,5 +1,5 @@
-{	
-"schemaVersion": 1,
+{
+	"schemaVersion": 1,
 	"id": "alsu-tier-tagger",
 	"version": "${version}",
 	"name": "ALSU Tier Tagger",
